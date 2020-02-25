@@ -15,6 +15,10 @@
 		1BF4DDD22405489E0039A220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4DDD02405489E0039A220 /* LaunchScreen.storyboard */; };
 		1BF4DDDB24054A760039A220 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4DDDA24054A760039A220 /* ViewController.storyboard */; };
 		1BF4DDDD24054BAB0039A220 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDDC24054BAB0039A220 /* MyViewController.swift */; };
+		1BF4DDE024054E240039A220 /* ContainerVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF4DDDF24054E240039A220 /* ContainerVC.storyboard */; };
+		1BF4DDE224054E840039A220 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDE124054E840039A220 /* ContainerViewController.swift */; };
+		1BF4DDE424054F870039A220 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDE324054F870039A220 /* TopViewController.swift */; };
+		1BF4DDE624054F8E0039A220 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDE524054F8E0039A220 /* BottomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		1BF4DDD32405489E0039A220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF4DDDA24054A760039A220 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		1BF4DDDC24054BAB0039A220 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		1BF4DDDF24054E240039A220 /* ContainerVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContainerVC.storyboard; sourceTree = "<group>"; };
+		1BF4DDE124054E840039A220 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		1BF4DDE324054F870039A220 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		1BF4DDE524054F8E0039A220 /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		1BF4DDC42405489B0039A220 /* VCStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BF4DDDE24054E100039A220 /* ContainerVC */,
 				1BF4DDD924054A620039A220 /* ViewController */,
 				1BF4DDC52405489B0039A220 /* AppDelegate.swift */,
 				1BF4DDC72405489B0039A220 /* SceneDelegate.swift */,
@@ -79,6 +88,17 @@
 				1BF4DDDC24054BAB0039A220 /* MyViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1BF4DDDE24054E100039A220 /* ContainerVC */ = {
+			isa = PBXGroup;
+			children = (
+				1BF4DDDF24054E240039A220 /* ContainerVC.storyboard */,
+				1BF4DDE124054E840039A220 /* ContainerViewController.swift */,
+				1BF4DDE324054F870039A220 /* TopViewController.swift */,
+				1BF4DDE524054F8E0039A220 /* BottomViewController.swift */,
+			);
+			path = ContainerVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF4DDD22405489E0039A220 /* LaunchScreen.storyboard in Resources */,
+				1BF4DDE024054E240039A220 /* ContainerVC.storyboard in Resources */,
 				1BF4DDCF2405489E0039A220 /* Assets.xcassets in Resources */,
 				1BF4DDCD2405489B0039A220 /* Main.storyboard in Resources */,
 				1BF4DDDB24054A760039A220 /* ViewController.storyboard in Resources */,
@@ -153,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF4DDE624054F8E0039A220 /* BottomViewController.swift in Sources */,
+				1BF4DDE424054F870039A220 /* TopViewController.swift in Sources */,
 				1BF4DDCA2405489B0039A220 /* ViewController.swift in Sources */,
 				1BF4DDC62405489B0039A220 /* AppDelegate.swift in Sources */,
+				1BF4DDE224054E840039A220 /* ContainerViewController.swift in Sources */,
 				1BF4DDDD24054BAB0039A220 /* MyViewController.swift in Sources */,
 				1BF4DDC82405489B0039A220 /* SceneDelegate.swift in Sources */,
 			);
