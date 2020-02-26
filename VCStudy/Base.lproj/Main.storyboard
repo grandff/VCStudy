@@ -26,6 +26,16 @@
             </objects>
             <point key="canvasLocation" x="2515" y="-793"/>
         </scene>
+        <!--NavigationController-->
+        <scene sceneID="le4-5B-1I7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NavigationController" id="u1L-nV-cld" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZII-UF-On9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaO-5q-E4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="-714"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="euf-4n-cME">
             <objects>
@@ -64,7 +74,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oNv-N5-UFf">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2. NavigationController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oNv-N5-UFf">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -73,6 +83,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="u1L-nV-cld" kind="show" id="ttQ-ax-wat"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="9sc-8h-SaA" style="IBUITableViewCellStyleDefault" id="L5k-S9-Lkn">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
