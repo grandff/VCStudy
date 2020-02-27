@@ -85,7 +85,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kEj-z7-m9X">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Tool Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kEj-z7-m9X">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,6 +94,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yAM-AY-ccj" kind="show" id="jEO-tu-xkg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -108,6 +111,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2Q-fz-dsq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-117" y="108"/>
+        </scene>
+        <!--First Toolbar-->
+        <scene sceneID="orp-Tt-Gf2">
+            <objects>
+                <viewController id="9qn-nk-4aX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMQ-0R-mOt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="CiL-dN-6fT"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Y1M-JE-6Je"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="First Toolbar" id="POl-O3-gWL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="ctl-d5-ukM">
+                            <connections>
+                                <segue destination="zys-yy-BHm" kind="show" id="CeY-BJ-wDK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zqd-c9-LiW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1558" y="-569"/>
+        </scene>
+        <!--Second Toolbar-->
+        <scene sceneID="oZm-KQ-N8f">
+            <objects>
+                <viewController id="zys-yy-BHm" customClass="SecondToolbarViewController" customModule="VCStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsy-li-htT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Id2-4A-fPe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Toolbar" id="xqC-6b-JCj">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="bl3-P5-wxs">
+                            <connections>
+                                <action selector="toggleToolbar:" destination="zys-yy-BHm" id="8r7-Zf-i6Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uv-RW-EUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="-569"/>
         </scene>
         <!--Navigation Host View Controller-->
         <scene sceneID="ROA-Hv-2qC">
@@ -496,6 +547,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFd-8C-KFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="829" y="1460"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m2q-tN-CAp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="yAM-AY-ccj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pls-fi-gvG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5or-hU-OEf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L3e-QS-WNx">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="9qn-nk-4aX" kind="relationship" relationship="rootViewController" id="1ki-21-t4P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqY-na-s7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="-569.19642857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

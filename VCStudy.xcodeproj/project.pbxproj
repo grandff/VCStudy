@@ -14,6 +14,7 @@
 		1B638EA52406A88B0089DF12 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B638EA42406A88B0089DF12 /* ThirdViewController.swift */; };
 		1B638EA72406A8970089DF12 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B638EA62406A8970089DF12 /* FourthViewController.swift */; };
 		1B89D6382407D52F009C6A85 /* CustomizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89D6372407D52F009C6A85 /* CustomizingViewController.swift */; };
+		1B89D63A2407DBC3009C6A85 /* SecondToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B89D6392407DBC3009C6A85 /* SecondToolbarViewController.swift */; };
 		1BF4DDC62405489B0039A220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDC52405489B0039A220 /* AppDelegate.swift */; };
 		1BF4DDC82405489B0039A220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDC72405489B0039A220 /* SceneDelegate.swift */; };
 		1BF4DDCA2405489B0039A220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4DDC92405489B0039A220 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		1B638EA42406A88B0089DF12 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		1B638EA62406A8970089DF12 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		1B89D6372407D52F009C6A85 /* CustomizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizingViewController.swift; sourceTree = "<group>"; };
+		1B89D6392407DBC3009C6A85 /* SecondToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondToolbarViewController.swift; sourceTree = "<group>"; };
 		1BF4DDC22405489B0039A220 /* VCStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF4DDC52405489B0039A220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BF4DDC72405489B0039A220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				1B638EA42406A88B0089DF12 /* ThirdViewController.swift */,
 				1B638EA62406A8970089DF12 /* FourthViewController.swift */,
 				1B89D6372407D52F009C6A85 /* CustomizingViewController.swift */,
+				1B89D6392407DBC3009C6A85 /* SecondToolbarViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				1B638E9F2406A61B0089DF12 /* NavigationHostViewController.swift in Sources */,
 				1BF4DDCA2405489B0039A220 /* ViewController.swift in Sources */,
 				1BF4DDC62405489B0039A220 /* AppDelegate.swift in Sources */,
+				1B89D63A2407DBC3009C6A85 /* SecondToolbarViewController.swift in Sources */,
 				1BF4DDE224054E840039A220 /* ContainerViewController.swift in Sources */,
 				1BF4DDDD24054BAB0039A220 /* MyViewController.swift in Sources */,
 				1B638EA52406A88B0089DF12 /* ThirdViewController.swift in Sources */,
