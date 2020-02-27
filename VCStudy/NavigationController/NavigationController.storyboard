@@ -45,7 +45,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZbR-im-LTP">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Navigation Item &amp; Navigation Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZbR-im-LTP">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,6 +54,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9bb-lT-5sn" kind="show" id="vNF-px-PzI"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="czd-ru-h0T" style="IBUITableViewCellStyleDefault" id="06a-d4-dev">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
@@ -146,6 +149,23 @@
             </objects>
             <point key="canvasLocation" x="1559" y="108"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CHC-k4-ngJ">
+            <objects>
+                <navigationController id="9bb-lT-5sn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fet-Jf-1p2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7IG-Ak-hSr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Uk6-V5-IYA" kind="relationship" relationship="rootViewController" id="rAI-OX-h73"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbB-uk-EO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="778"/>
+        </scene>
         <!--First View Controller-->
         <scene sceneID="Hq7-aY-cZf">
             <objects>
@@ -190,13 +210,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mUq-Py-d7S"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pUH-4I-wZq"/>
+                    <navigationItem key="navigationItem" id="pUH-4I-wZq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="cAW-WF-Kdj"/>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="QL6-1U-2JO">
+                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="TBf-p4-CnO">
+                                    <rect key="frame" x="343" y="6.5" width="51" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="switchChanged:" destination="Uk6-V5-IYA" eventType="valueChanged" id="eev-sz-zd5"/>
+                                    </connections>
+                                </switch>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="Xie-pP-zQE"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2r-Cz-WmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2246" y="108"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Second-->
         <scene sceneID="oOF-nq-Ymr">
             <objects>
                 <viewController storyboardIdentifier="SecondViewController" id="17n-I5-MYf" customClass="SecondViewController" customModule="VCStudy" customModuleProvider="target" sceneMemberID="viewController">
@@ -248,7 +282,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="0pm-Ql-P7A"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2u4-Uw-hUj"/>
+                    <navigationItem key="navigationItem" title="Second" id="2u4-Uw-hUj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2y-7d-gCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,4 +417,7 @@
             <point key="canvasLocation" x="4241" y="108"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rAI-OX-h73"/>
+    </inferredMetricsTieBreakers>
 </document>
