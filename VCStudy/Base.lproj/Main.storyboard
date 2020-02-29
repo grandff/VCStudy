@@ -14,7 +14,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHm-dD-y9y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484.7826086956525" y="-846.42857142857144"/>
+            <point key="canvasLocation" x="2502" y="-846"/>
         </scene>
         <!--ContainerVC-->
         <scene sceneID="FKk-qY-p5P">
@@ -24,7 +24,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPU-62-aiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2515" y="-793"/>
+            <point key="canvasLocation" x="2492" y="-794"/>
         </scene>
         <!--NavigationController-->
         <scene sceneID="le4-5B-1I7">
@@ -94,7 +94,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9sc-8h-SaA">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3. Tab Bar Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9sc-8h-SaA">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -103,6 +103,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tLz-Bt-7dO" kind="show" id="bZZ-Eg-RCo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -193,6 +196,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKo-ja-Wht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-555.13392857142856"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="R6w-LZ-qF1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBarController" id="tLz-Bt-7dO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bLX-iB-kJl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2T-VI-5jt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2510" y="-638"/>
         </scene>
     </scenes>
 </document>
